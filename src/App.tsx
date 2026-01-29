@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import { store } from './store/store'
 import Navigation from './components/Navigation'
 import TodosPage from './pages/TodosPage'
+import PostsPage from './pages/PostsPage'
 import './App.css'
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
             <Routes>
               <Route path="/" element={<TodosPage />} />
               <Route path="/todos" element={<TodosPage />} />
-              <Route path="/posts" element={<div><h1>Posts</h1><p>Posts will go here.</p></div>} />
+              <Route path="/posts" element={<PostsPage />} />
             </Routes>
           </main>
         </div>
