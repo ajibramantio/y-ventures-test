@@ -160,21 +160,6 @@ Todos are automatically saved to `localStorage` and restored on page reload. Thi
 
 6. **Accessibility**: Basic accessibility features are implemented, including proper ARIA labels and keyboard navigation support.
 
-## 🚀 Deployment
-
-To deploy this project to Vercel:
-
-1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-2. Import the project in Vercel
-3. Vercel will automatically detect the Vite configuration
-4. Deploy!
-
-The project is ready for deployment and will work out of the box on Vercel or any other static hosting service.
-
 ## 📄 License
 
 This project is created for testing purposes.
-
-## 👤 Author
-
-Created as part of the Y Ventures technical assessment.
