@@ -1,21 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { store } from './store/store'
 import Navigation from './components/Navigation'
+import TodosPage from './pages/TodosPage'
 import './App.css'
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Navigation />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<div><h1>Todos</h1><p>Todo list will go here.</p></div>} />
-            <Route path="/todos" element={<div><h1>Todos</h1><p>Todo list will go here.</p></div>} />
-            <Route path="/posts" element={<div><h1>Posts</h1><p>Posts will go here.</p></div>} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <div className="app">
+          <Navigation />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<TodosPage />} />
+              <Route path="/todos" element={<TodosPage />} />
+              <Route path="/posts" element={<div><h1>Posts</h1><p>Posts will go here.</p></div>} />
+            </Routes>
+          </main>
+        </div>
+      </Router>
+    </Provider>
   )
 }
 
